@@ -7,93 +7,173 @@
     <title>Hockeys</title>
     <!-- google fonts manrope -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-     <!-- tailwind and daisy ui -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- tailwind and daisy ui -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.1/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-     <style>
-        .font-manrope{
+    <style>
+        .font-manrope {
             font-family: "Manrope", sans-serif;
         }
-     </style>
+    </style>
 
 </head>
-<body class="container mx-auto font-manrope">
-    <!-- nav section -->
-    <nav>
-        <div class="navbar bg-base-100">
-            <div class="navbar-start">
-              <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                </div>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 font-semibold">
-                  <li><a><span class="text-[#FF4240FF]">Home</span></a></li>
-                  <li><a>About</a></li>
-                  <li><a>Pages</a></li>
-                  <li><a>Blog</a></li>
-                  <li><a>Contuct</a></li>
-                </ul>
-              </div>
-              <a class="btn btn-ghost font-extrabold text-3xl lg:text-4xl">Hockeys</a>
-            </div>
-            <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1 font-semibold">
-                <li><a><span class="text-[#FF4240FF]">Home</span></a></li>
-                <li><a class="font-semibold">About</a></li>
-                <li><a>Pages</a></li>
-                <li><a>Blog</a></li>
-                <li><a>Contuct</a></li>
-              </ul>
-            </div>
-            <div class="navbar-end">
-                <img class="w-7 mr-2 lg:mr-5 hidden lg:flex" src="./Images/search.png" alt=""> 
-              <a class="btn bg-[#FF4240FF]  lg:w-36  text-white text-xl font-bold">Get Ticket</a>
-            </div>
-          </div>
 
-    </nav>
-    <!-- banner section -->
-    <div class="my-6 lg:my-12">
-        <div class="carousel w-full">
-            <!-- firs slider -->
-            <div id="slide1" class="carousel-item relative w-full">
-              <img src="./Images/1.png" class="w-full" />
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide4" class="btn btn-circle">❮</a> 
-                <a href="#slide2" class="btn btn-circle">❯</a>
-              </div>
-            </div> 
-            <!-- second slider -->
-            <div id="slide2" class="carousel-item relative w-full">
-              <img src="./Images/1.png" class="w-full" />
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide1" class="btn btn-circle">❮</a> 
-                <a href="#slide3" class="btn btn-circle">❯</a>
-              </div>
-            </div> 
-            <!-- third slider -->
-            <div id="slide3" class="carousel-item relative w-full">
-              <img src="./Images/1.png" class="w-full" />
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide2" class="btn btn-circle">❮</a> 
-                <a href="#slide4" class="btn btn-circle">❯</a>
-              </div>
-            </div> 
-            <!-- fourth slider -->
-            <div id="slide4" class="carousel-item relative w-full">
-              <img src="./Images/1.png" class="w-full" />
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide3" class="btn btn-circle">❮</a> 
-                <a href="#slide1" class="btn btn-circle">❯</a>
-              </div>
+<body class="container mx-auto font-manrope">
+    <header>
+        <!-- nav section -->
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 font-semibold">
+                            <li><a><span class="text-[#FF4240FF]">Home</span></a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contuct</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost font-extrabold text-3xl lg:text-4xl">Hockeys</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 font-semibold">
+                        <li><a><span class="text-[#FF4240FF]">Home</span></a></li>
+                        <li><a class="font-semibold">About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contuct</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <img class="w-7 mr-2 lg:mr-5 hidden lg:flex" src="./Images/search.png" alt="">
+                    <a class="btn bg-[#FF4240FF]  lg:w-36  text-white text-xl font-bold">Get Ticket</a>
+                </div>
             </div>
-          </div>
-    </div>
-    <!-- professioanl club -->
-    
+
+        </nav>
+        <!-- banner section -->
+        <div class="my-6 lg:my-12">
+            <div class="carousel w-full">
+                <!-- firs slider -->
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="./Images/1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <!-- second slider -->
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="./Images/1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <!-- third slider -->
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="./Images/1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <!-- fourth slider -->
+                <div id="slide4" class="carousel-item relative w-full">
+                    <img src="./Images/1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- professioanl club -->
+        <div class="my-10 space-y-4">
+            <h1 class="text-3xl lg:text-4xl font-extrabold text-center">Professional Hockeys Club</h1>
+            <p class="font-semibold w-80 lg:w-[600px] text-center mx-auto">The professional hockey club is an
+                institution deeply rooted in the sport's rich history and tradition, embodying the passion and
+                dedication of players, coaches, and fans alike.</p>
+            <div class=" grid grid-cols-1 lg:grid-cols-4 ">
+                <!-- first card -->
+                <div class="card bg-base-100">
+                    <figure class="px-10 pt-10">
+                        <div class="radial-progress text-[#FF4240]" style="--value:87;" role="progressbar">87%</div>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Prayer Facility</h2>
+                        <p>Nestled in serene surroundings, our private facility offers an exclusive </p>
+                    </div>
+                </div>
+                <!-- scond card -->
+                <div class="card  bg-base-100">
+                    <figure class="px-10 pt-10">
+                        <div class="radial-progress text-[#49D293]" style="--value:95;" role="progressbar">95%</div>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Experienced Coach</h2>
+                        <p>
+                            An experienced coach is the linchpin of athletic success, embodying a wealth of knowledge,
+                        </p>
+                    </div>
+                </div>
+                <!-- third card -->
+                <div class="card bg-base-100">
+                    <figure class="px-10 pt-10">
+                        <div class="radial-progress text-[#FFB546]" style="--value:90;" role="progressbar">87%</div>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Senior Player</h2>
+                        <p>
+                            A senior player in the context of sports or games typically refers to an experienced </p>
+                    </div>
+                </div>
+                <!-- fourth card -->
+                <div class="card  bg-base-100">
+                    <figure class="px-10 pt-10">
+                        <div class="radial-progress text-[#4C8DF1]" style="--value:80;" role="progressbar">80%</div>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Trining Ground</h2>
+                        <p>a place where people go to get fit and practise the skills necessary for the sport that they
+                            play </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- program section -->
+        <div class="space-y-4">
+            <h1 class="text-4xl font-extrabold text-center">Program Section</h1>
+            <p class="font-semibold text-center mx-auto justify-center w-80 lg:w-[600px]">Field hockey (or simply
+                hockey) is a team sport structured in standard hockey format, in which each team plays with 11 players
+                in total, made up of 10 field </p>
+            <div class="img-container">
+            <div class="img1"></div>
+            <div class="img2"></div>
+            <div class="img3"></div>
+        </div>
+
+    </main>
+    <footer>
+
+    </footer>
+
 
 
 </body>
+
 </html>
